@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1
+      discovery:
+        group: SNAPUP_GROUP
+        namespace: 725d62dc-11f8-451d-ac7e-04427536de08
+      config:
+        group: SNAPUP_GROUP
+        namespace: 725d62dc-11f8-451d-ac7e-04427536de08
+        file-extension: yaml
+        enable-remote-sync-config: true
