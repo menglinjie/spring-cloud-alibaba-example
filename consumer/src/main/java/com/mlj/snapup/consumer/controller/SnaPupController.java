@@ -25,6 +25,7 @@ public class SnaPupController {
     @Value("${user.name}")
     private String name;
 
+
     @GetMapping("/get")
     public Result get() {
         return snaPupService.get(name);
