@@ -12,3 +12,14 @@ spring:
         namespace: 725d62dc-11f8-451d-ac7e-04427536de08
         file-extension: yaml
         enable-remote-sync-config: true
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+      datasource:
+        ds:
+          nacos:
+            server-addr: http://****
+            groupId: DEFAULT_GROUP
+            dataId: provider-sentinel
+            namespace: 725d62dc-11f8-451d-ac7e-04427536de08
+            rule-type: flow
