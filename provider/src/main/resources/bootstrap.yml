@@ -3,23 +3,23 @@ spring:
     name: @artifactId@
   cloud:
     nacos:
-      server-addr: 127.0.0.1
+      server-addr: http://192.168.7.185:8848
       discovery:
         group: SNAPUP_GROUP
-        namespace: 725d62dc-11f8-451d-ac7e-04427536de08
+        namespace: 63144660-1b5a-4f2e-88d2-753879dae97f
       config:
         group: SNAPUP_GROUP
-        namespace: 725d62dc-11f8-451d-ac7e-04427536de08
+        namespace: 63144660-1b5a-4f2e-88d2-753879dae97f
         file-extension: yaml
         enable-remote-sync-config: true
-    sentinel:
-      transport:
-        dashboard: localhost:8080
-      datasource:
-        ds:
-          nacos:
-            server-addr: http://****
-            groupId: DEFAULT_GROUP
-            dataId: provider-sentinel
-            namespace: 725d62dc-11f8-451d-ac7e-04427536de08
-            rule-type: flow
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8080
+#      datasource:
+#        ds:
+#          nacos:
+#            server-addr: http://****
+#            groupId: DEFAULT_GROUP
+#            dataId: provider-sentinel
+#            namespace: 725d62dc-11f8-451d-ac7e-04427536de08
+#            rule-type: flow
